@@ -1,0 +1,170 @@
+// TabComponent.scss
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4e4e4; /* Orange color */
+  padding: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 400px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e7870a;
+  }
+
+  &.active {
+    background-color: #000000;
+    color: #fff;
+  }
+}
+
+.content {
+  padding: 10px;background-color: #e4e4e4; /* Orange color */;
+  border-radius: 5px;
+}
+// SolarPanelComponent.scss
+
+.solar-panel-container {
+  text-align: center;
+  padding: 20px;  background-color: #e4e4e4; /* Orange color */ /* Set your desired background color */
+}
+.package{
+  margin-left: -250px;
+}
+.solar-panel-content {
+  max-width: 600px;
+  margin: 20px auto;
+  margin-left: 257px;
+  text-align: justify;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.solar-panel-image img {
+  width: 200px;
+  height: auto;
+  margin-left: -800px;
+  margin-top: -380px;
+  width: 400px;
+  height: 450px;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+}
+
+
+.text-div {
+  columns: 2;
+  text-align: right;
+  text-align: justify;
+  margin-left: 257px;
+  .h5{
+    margin-top: 14px;
+  }
+}
+.content1{
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+@media only screen and (min-width: 360px) and (max-width:375px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: center;
+    background-color: #e4e4e4; /* Orange color */
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 300px;
+    margin-bottom: 50px;
+    height: 400px;
+  }
+  .tabs {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 35px;
+    width: 360px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 23px;
+    width: 50px;
+    border: 1px solid #fff;
+    font-size: smaller;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    margin-top: 0px;
+  }  
+  .content {
+    padding: 10px;background-color: #e4e4e4; /* Orange color */;
+    border-radius: 5px;
+    width: 320px;
+    height: -20px;
+  }
+  .package{
+    margin-left: -200px;
+    margin-top: -20px;
+  }
+  .solar-panel-container {
+    text-align: center;
+    padding: 20px;  background-color: #e4e4e4; /* Orange color */ /* Set your desired background color */
+    height: 100px;
+  }
+  .solar-panel-content {
+    margin: 20px auto;
+    margin-left: -20px;
+    width: 330px;
+    margin-bottom: 70px;
+    text-align: justify;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .content1{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 0px;
+  }
+  .text-div {
+    columns: 2;
+    text-align: right;
+    text-align: justify;
+    margin-left:-20px;
+    gap: 15px;
+    width: 323px;
+    height: 100px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    .h5{
+      margin-top: 25px;
+      width: 150px;
+      
+    }
+
+.solar-panel-image  img{
+  width: 200px;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+}
+  }
+}
+
+

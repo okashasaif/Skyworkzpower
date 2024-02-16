@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #D7D7CC;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+      
+
+        .form-container {
+            background-color: #D7D7CC;
+            overflow: hidden;
+            width: 1300px;
+            height: 100%;
+            position: relative;
+            
+            
+        }
+
+        .form-header {
+            
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        .form-body {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 500%;
+            height: 500%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 0px;
+            box-sizing: border-box;
+            max-width: 589px;
+            
+            
+        }
+        .options form{
+            max-width: 400px;
+            border-radius: 0px;
+            padding: 100px;
+
+        }
+       input[type=text],select{
+        width: 97%;
+        padding: 8px 10px;
+        height: 300%;
+        margin: 8px 0;
+        border: 1px solid black;
+        border-radius: 0px;
+        box-sizing:border-box;
+       }
+
+
+
+       
+       *{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Let's style the btn in such away that, 
+it should always be at the center of the browser and style the btn */
+.btn{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+    border: 5px solid #f9c23c;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Style the p tag */
+.btn p{
+   text-transform: uppercase;
+   text-align: center;
+   color: #000000;
+   font-weight: 900;
+   font-size: 20px;
+   margin-left: 30px;
+   transition: all 0.5s ease;
+}
+
+/* Style the first icon with class send */
+.send{
+  position: absolute;
+  top:15px;
+  left: 30px;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+/* Style the second icon with class send2 */
+.send2{
+  position: absolute;
+  top:80px;
+  left: 30px;
+  color: #696666;
+  transition: all 0.5s ease;
+}
+
+
+/* Hover effects */
+.btn:hover{
+  background: #f9c23c;
+  transition: all 0.5s ease;
+}
+
+.btn:hover p{
+  color: #696666;
+  transition: all 0.5s ease;
+  animation: move 1s linear 1s forwards;
+}
+
+.btn:hover .send{
+  top: -50px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .send2{
+  top: 15px;
+  transition: all 0.5s ease;
+  animation: sending 1s linear 1s forwards;
+}
+
+
+/* CSS3 animation keyframes */
+@keyframes sending{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translate(40px, -60px);
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-18px);
+  }
+}
+
+    
+    </style>
+</head>
+<body>
+    
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form-body">
+            <div class="column">
+                <div class="form-group">
+                    <label for="name"><b>First Name*:</b></label>
+                    <input type="name" id="name" name="name" placeholder="Enter your name here" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Company:</b></label>
+                    <input type="com" id="com" name="com" placeholder="Enter your company name" required>
+                    <br>
+                </div>
+                <div class="options form">
+                <label for="about"><b>How did you hear about us?</b></label>
+                <select  id="about">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">Magazine</option>
+                    <option value="billbo">Billboard</option>
+                    <option value="pum">Pamphlets</option>
+                    <option value="add">Adds</option>
+                    <option value="other">Other</option>
+                </select>
+                    </div>
+
+                <div class="options form">
+                <label for="about"><b>Maximum Summer Electricity BIll?</b></label>
+                <select  id="bill">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">20k-30k</option>
+                    <option value="billbo">30k-50k</option>
+                    <option value="pum">50k-90k</option>
+                    <option value="add">90k-150k</option>
+                    <option value="other">More than 150k</option>
+                </select>
+                    </div>
+
+                <div class="options form">
+                <label for="porper"><b>Property Size?</b></label>
+                <select  id="property">
+                    <option value="sel">-Select-</option>
+                    <option value="sel">Less then 10 Marla</option>
+                    <option value="sel">5 Marla</option>
+                    <option value="maga">10 Marla</option>
+                    <option value="billbo">20 Marla</option>
+                    <option value="pum">1 Kanal 5 Marla</option>
+                    <option value="add">1 Kanal 10 Mrla</option>
+                    <option value="other">2 Kanal</option>
+                    <option value="other">More then 2 Kanal</option>
+                </select>
+                    </div>
+
+
+
+            </div>
+            <div class="column">
+                <div class="form-group">
+                    <label for="city"><b>Last Name*:</b></label>
+                    <input type="lname" id="lname" name="lname" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="country"><b>Contact No:</b></label>
+                    <input type="cont" id="cont" name="cont" placeholder="03xx-xxxxxxx" required>
+                </div>
+
+                 <div class="options form">
+                <label for="about"><b>City:</b></label>
+                <select  id="about">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">Hafizabad</option>
+                    <option value="billbo">lahore</option>
+                    <option value="pum">Islamabad</option>
+                    <option value="add">Gujrawala</option>
+                    <option value="other">Faisalabad</option>
+                    <option value="other">Rawal Pindi</option>
+                    <option value="other">karachi</option>
+                    <option value="other">Sadiqabad</option>
+                    <option value="other">Bahawalpur</option>
+                    <option value="other">DG Khan</option>
+                    <option value="other">Peshawer</option>
+                    <option value="other">Kasur</option>
+                    <option value="other">Patoki</option>
+                    <option value="other">Quetta</option>
+                    <option value="other">Quetta</option>
+                </select>
+                    </div>
+
+                 <div class="options form">
+                <label for="about"><b>How did you hear about us?</b></label>
+                <select  id="about">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">Magazine</option>
+                    <option value="billbo">Billboard</option>
+                    <option value="pum">Pamphlets</option>
+                    <option value="add">Adds</option>
+                    <option value="other">Other</option>
+                </select>
+                    </div>
+
+                 <div class="options form">
+                <label for="about"><b>How did you hear about us?</b></label>
+                <select  id="about">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">Magazine</option>
+                    <option value="billbo">Billboard</option>
+                    <option value="pum">Pamphlets</option>
+                    <option value="add">Adds</option>
+                    <option value="other">Other</option>
+                </select>
+                    </div>
+
+                 <div class="options form">
+                <label for="about"><b>How did you hear about us?</b></label>
+                <select  id="about">
+                    <option value="sel">-Select-</option>
+                    <option value="maga">Magazine</option>
+                    <option value="billbo">Billboard</option>
+                    <option value="pum">Pamphlets</option>
+                    <option value="add">Adds</option>
+                    <option value="other">Other</option>
+                </select>
+                    </div>
+
+
+
+
+                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+                    <div class="btn">
+                     <i class="fa fa-paper-plane-o fa-2x send" aria-hidden="true"></i>
+                      <i class="fa fa-paper-plane-o fa-2x send2" aria-hidden="true"></i>
+                      <p>Send Request</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

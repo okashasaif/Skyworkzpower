@@ -1,0 +1,218 @@
+.container2{
+    background-image: url(../images/New-to-Enphase.webp);
+    height: 500px;
+}
+.container2-content{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 400px;
+    transition: ease-in-out 0.5ms;
+}
+.buttoncontainer{
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: rgb(237, 156, 5);
+    background-color:transparent;
+    animation: moveText 2s infinite;
+}
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(80px); /* Adjust the distance of movement */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.services-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 200px;
+    height: 391px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .services-item {
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 120px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    font-weight: 100;
+    font-size:medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .services-item img {
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 8px; /* Add border-radius for rounded corners if desired */
+    margin-bottom: 10px;
+  }
+  .servicesinv-container {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 200px;
+    height: 150x;
+
+  }
+  
+  .servicesinv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .servicesinv-item {
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    margin-top: 50px;
+    margin-right: 60px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    font-weight: 100;
+    font-size:medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .servicesinv-item img {
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 8px; /* Add border-radius for rounded corners if desired */
+    margin-bottom: 10px;
+  }
+  .buttoncontainer2{
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 480px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: rgb(237, 156, 5);
+    background-color:black;
+    animation: moveText 2s infinite;
+}
+  
+@media only screen and (min-width: 360px) and (max-width:375px) {
+  .buttoncontainer2{
+    height: 50px;
+    width: 200px;
+
+  display: block;
+    margin-top: -120px;
+    margin-left:40px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: rgb(237, 156, 5);
+    background-color:black;
+    animation: moveText 7s infinite;
+}
+.container2{
+  background-image: url(../images/New-to-Enphase.webp);
+  background-size: 100% 200px;
+  height: 200px;
+}
+.buttoncontainer{
+  height: 50px;width: 300px;
+  font-size: xx-small;
+  display: block;
+  margin-top: -270px;
+  margin-left: -15px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  border: 2px solid;
+  border-color: rgb(237, 156, 5);
+  background-color:transparent;
+  animation: moveText 7s infinite;
+}
+.services-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+  height: 391px;
+  margin-top: 200px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.services-item {
+  text-align: center;
+  height: 350px;
+  width: 330px;
+  margin-top: -150px;
+  margin-right: 120px;
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+  font-weight: 100;
+  font-size:medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.services-item img {
+  width: 400px;
+  margin-left: -70px;
+  margin-top: 4px;
+  height: 200px;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 10px;
+}
+.servicesinv-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+  height: 150x;
+
+}
+
+.servicesinv-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.servicesinv-item {
+  text-align: center;
+  height: 350px;
+  width: 330px;
+  margin-right: 80px;
+  margin-left: -20px;
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+  font-weight: 100;
+  font-size:medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.servicesinv-item img {
+  width: 250px;
+  margin-left: 22px;
+  margin-top: 30px;
+
+  margin-bottom: 200px;
+  height: 200px;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 10px;
+}
+}

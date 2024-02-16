@@ -1,0 +1,321 @@
+
+
+.headerhome{
+  background-image: url(../images/bannernew2.jpg);
+  background-size: 100% 500px; // Set width and height to 100%
+  height: 500px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.upper-container { background-color: #ffffff; // Set your desired background color
+  padding: 20px;
+  margin-top: 20px;
+  margin-top: 17px;
+  text-align: center;
+  width: 650px;
+
+  flex-direction: column;
+  .ourmission1{
+      font-weight: 100;
+  }
+}
+
+
+.img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 320px;
+  display: block;
+}
+
+.ourmission{
+  margin-top: 10px;
+  
+
+  .ourmission1{
+      margin-top: 0px;
+      font-weight: 100;
+  }
+}
+
+.lower-container {
+  background-color: #ffffff; // Set your desired background color
+  padding: 20px;
+  margin-top: 20px;
+  margin-top: 17px;
+  text-align: center;
+
+  width: 700px;
+  .ourmission3{
+    margin-top: 0px;
+    font-weight: 100;
+}
+}
+p{
+  margin-bottom: 2px;
+}
+.last-container { background-color: #ffffff; // Set your desired background color
+  padding: 20px;
+  margin-top: 10px;
+  margin-top: 500px;
+  width: 300px;
+  padding-bottom: -100px;
+  flex-direction: column;
+  margin-top: 200px;
+  font-style: italic;
+  text-align: center;
+
+}
+.ourmission{
+  margin-top: 0px;
+  
+
+  .ourmission2{
+      margin-top: 10px;
+      font-weight: 100;
+      font-style: italic;
+  }
+  p{
+    font-style: italic;
+  }
+}
+.img-fluid {
+  height: auto;
+  border-radius: 400px;
+  height: 200px;
+  width: 200px;
+  margin-top: -900px;
+  margin-right: 10px;
+}
+
+.CEO-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+  height: 150x;
+  width: 150px;
+  margin-right: 1000px;
+
+}
+
+.CEO-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 800px;
+}
+
+.CEO-item {
+  text-align: center;
+  height: 150px;
+  width: 700px;
+  margin-top: 50px;
+  font-family:cursive;
+  margin-right: -100px;
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+  font-weight: 100;
+  margin-left: -100px;
+  font-size:medium;
+}
+
+.CEO-item img {
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 150px;
+  height: 250px;
+  border-radius: 50%; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 10px;
+  border: 15px solid black;
+}
+.whatsapp-button {
+  background-color: transparent; // WhatsApp green color
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%; // Set border-radius to create a full circle
+  position: fixed;
+  bottom: 20px; // Adjust the distance from the bottom
+  right: 20px; // Adjust the distance from the right
+  color: #FFFFFF; // Text color
+  border: none; // Remove borders if needed
+  padding: 15px; // Adjust padding as needed
+  font-size: 16px; // Adjust font size as needed
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%; // Set border-radius to create a full circle
+  position: fixed;
+  bottom: 20px; // Adjust the distance from the bottom
+  right: 20px; // Adjust the distance from the right
+  margin-right: -40px;
+}
+
+.paragraph{
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+//responsive
+@media only  screen and  (min-width: 360px) and (max-width:375px)  {
+  .headerhome{
+    background-image: url(../images/bannernew2.jpg);
+  background-size: 100% 200px; // Set width and height to 100%
+  height: 200px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 350px;
+    margin-bottom: 80px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+    .upper-container { background-color: #ffffff; // Set your desired background color
+      padding: 20px;
+      margin-top: -20px;
+      flex-direction: column;
+
+      margin-right: 380px;
+      text-align: center;
+
+       
+    .img {
+      height: auto;
+      padding-left: 100px;
+    }
+      .ourmission1{
+          font-weight: 100;
+      }
+    }
+    
+   
+    
+    .ourmission{
+      margin-top: 10px;
+      
+    
+      .ourmission1{
+        margin-top: 50px;
+        margin-left: 180px;
+        font-weight: 500;
+        width: 300px;
+      }
+    }
+    .lower-container {
+      background-color: #ffffff; // Set your desired background color
+      padding: 20px;
+      margin-top: 20px;
+      margin-right: 380px;
+      margin-top: 17px;
+      text-align: center;
+    
+      width: 700px;
+      .ourmission3{
+        margin-left: 200px;
+        margin-top: 50px;
+        font-weight: 500;
+        width: 300px;
+    }
+    }
+    .last-container { background-color: #ffffff; // Set your desired background color
+  padding: 20px;
+  margin-top: 10px;
+  width: 300px;
+  padding-bottom: -100px;
+  flex-direction: column;
+  margin-top: 200px;
+  font-style: italic;
+  text-align: center;
+
+}
+.ourmission{
+  margin-top: 0px;
+  font-style: italic;
+  
+
+  .ourmission2{
+      margin-top: 10px;
+      font-weight: 800;
+      font-style: italic;
+  }
+  p{
+    font-style: italic;
+  }
+}
+   
+.CEO-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+  height: 150x;
+  width: 150px;
+  margin-top: -40px;
+  margin-right: 1000px;
+
+}
+
+.CEO-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  width: 800px;
+  margin-top: -120px;
+}
+
+.CEO-item {
+  text-align: center;
+  height: 250px;
+  width: 360x;
+  margin-top: 125px;
+  font-family:cursive;
+  margin-right: -100px;
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+  font-weight: 100;
+  margin-left: 230px;
+  font-size:small
+}
+
+.CEO-item img {
+  width: 250px;
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 250px;
+  border-radius: 50%; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 50px;
+  border: 15px solid black;
+}
+.paragraph{
+  margin-top: 10px;
+  font-size: smaller;
+  margin-right: 400px;
+}
+
+   
+    
+
+    
+   
+   
+
+     
+  }

@@ -1,0 +1,63 @@
+
+
+
+.residential-project-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.project-item {
+  text-align: center;
+  height: 150px;
+  width: 250px;
+  margin-top: 0px;
+  margin-left: 120px;
+}
+
+.project-item img {
+  width: 200px;
+  margin-left: -40px;
+  margin-top: 20px;
+  margin-bottom: 400px;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 10px;
+}
+
+.commercial-project-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+.commercial-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.commercial-project-item {
+  text-align: justify;
+  height: 150px;
+  width: 350px;
+  margin-top: 0px;
+  margin-left: 230px;
+}
+
+.commercial-project-item img {
+  width: 200px;
+  margin-left: -20px;
+  margin-top: 20px;
+  margin-bottom: 400px;
+  height: 200px;
+  border-radius: 8px; /* Add border-radius for rounded corners if desired */
+  margin-bottom: 10px;
+}
+
